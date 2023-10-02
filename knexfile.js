@@ -3,7 +3,7 @@ const sharedConfig = {
     useNullAsDefault: true,
     migrations: { directory:'./data/migrations'},
     pool: { 
-        afterCreate:(conn, done) => conn.run('PRAGMA foreign_kkeys = ON', done)
+        afterCreate:(conn, done) => conn.run('PRAGMA foreign_keys = ON', done)
     },
     seed:{ 
         directory:'./data/seeds'
