@@ -10,6 +10,7 @@ async function getRecipeById(recipe_id){
     's.steps_id',
     's.step_number',
     's.step_text',
+    'si.ingredient_id'
  )
  .where('r.recipe_id', recipe_id)
  return recipeRows
