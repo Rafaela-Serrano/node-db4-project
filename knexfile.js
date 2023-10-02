@@ -5,7 +5,7 @@ const sharedConfig = {
     pool: { 
         afterCreate:(conn, done) => conn.run('PRAGMA foreign_keys = ON', done)
     },
-    seed:{ 
+    seeds:{ 
         directory:'./data/seeds'
     },
 }
